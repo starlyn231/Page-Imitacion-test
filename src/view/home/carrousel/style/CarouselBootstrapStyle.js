@@ -4,16 +4,32 @@ import COLORS from "../../../../theme/Colors";
 
 export const ImageContainer = styled("div")((props) => ({
   display: 'flex',
-  // position: 'relative',
-  minHeight: "100vh",
+  position: 'relative',
+  //minHeight: "100vh",
+
   background: `url(${props.image})`,
   backgroundSize: "cover",
   boxShadow: "inset 0 0 0 2000px rgba(0, 0, 0, 0.5)",
+
 }));
+
+export const Row = styled('div')({
+  display: 'flex',
+  flexDirection: 'row',
+});
+
+export const CardTextContainer = styled('div')({
+  display: 'flex',
+  flexDirection: 'row',
+  alignSelf: 'center',
+  width: '80%',
+  padding: '2%'
+});
+
 
 
 export const ButtonContainer = styled("div")({
-  marginRight: '100% !important'
+  marginRight: '50% !important'
 });
 
 export const Title = styled("h1")({
@@ -25,6 +41,7 @@ export const Title = styled("h1")({
   overflow: 'hidden',
   textOverflow: 'ellipsis',
   display: '-webkit-box',
+
   '-webkit-box-orient': 'vertical',
   "@media (min-width:320px)": {
     fontSize: "28px !important",

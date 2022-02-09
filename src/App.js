@@ -4,15 +4,22 @@ import './App.css';
 import { Home } from './view/home/Home';
 import { QueryClient, QueryClientProvider } from 'react-query'
 import { ReactQueryDevtools } from 'react-query/devtools'
-
+import { BrowserRouter } from 'react-router-dom';
+import { Router } from './router/Router'
+import { Header } from './component/header/Header';
 const queryClient = new QueryClient();
 function App() {
   return (
     <QueryClientProvider client={queryClient}>
 
-      <div>
-        <Home />
-      </div>
+
+      <BrowserRouter>
+        <Header />
+        <Router />
+
+      </BrowserRouter>
+
+
 
       <ReactQueryDevtools />
     </QueryClientProvider>

@@ -1,19 +1,46 @@
-.carouselMain {
+/*.use-bootstrap {
+  background-color: rebeccapurple;
   position: relative;
   width: 100%;
   min-height: 100vh;
+}
+.carouselMain {
+  position: absolute;
+  flex-direction: column;
+  justify-content: center;
+  height: 80%;
+  width: 80%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: Montserrat, sans-serif !important;
+  background-color: chartreuse;
+  z-index: 1000;
+
+ padding-top: 80px;
+
+  box-sizing: border-box;
+}  
+*/
+.use-bootstrap {
+  /*background-color: #0961ad;*/
+  display: flex;
+  position: relative;
+  justify-content: center;
+  /* height: 50%;*/
+}
+.carouselMain {
   background-color: rgba(0, 0, 0, 0.35);
+  display: flex;
+
+  position: absolute;
+  /* height: 500px;*/
 }
 
 .item {
-  min-height: 100vh;
+  min-height: 100%;
   width: 100%;
-}
-
-img {
-  height: 100%;
   position: absolute;
-  width: 100vh;
 }
 
 #back {
@@ -34,49 +61,5 @@ img {
 
 #next:hover,
 #back:hover {
-  color: #ed5f30;
-}
-.containerBtn {
-  position: relative;
-  right: 38%;
-}
-.btnMore {
-  color: #ffffff;
-  background-color: #ed5f30;
-  font-family: "Nunito Sans";
-  border-radius: 20px !important;
-}
-
-@media (min-width: 320px) {
-  .btnMore {
-    position: absolute;
-    left: 22%;
-    margin: auto;
-    width: 150px;
-    height: 35px;
-  }
-}
-
-@media (min-width: 768px) {
-  .containerBtn {
-    justify-content: center;
-    position: relative;
-    right: 57%;
-    top: 4%;
-    margin: 2px;
-  }
-  .btnMore {
-    width: 225px;
-    height: 45px;
-    padding: 5px;
-    font-family: "Nunito Sans";
-    font-size: 15px;
-  }
-}
-
-.btnMore:hover,
-.btnMore:active {
-  color: white;
-  background-color: #231f20;
-  border-radius: 20px;
+  color: #0961ad;
 }
