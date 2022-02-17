@@ -4,7 +4,7 @@ import * as Yup from "yup";
 import formJson from "../../data/custom-form.json";
 
 
-import { MySelect, MyTextField } from "./components"
+import { MySelect, MyTextField } from "../components"
 // ES6 Modules or TypeScript
 //import Swal from "sweetalert2";
 const initialValues = {};

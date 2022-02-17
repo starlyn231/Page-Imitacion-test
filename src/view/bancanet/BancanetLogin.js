@@ -51,114 +51,93 @@ export const BancanetLogin = () => {
       </TopContainer>
       <MainContainer>
         <LoginContainer>
-          <ListUl >
+          <div style={{ display: 'flex', flexDirection: 'row', marginBottom: '25px' }}>
+            <div style={{
 
-            <List  >
-              <ul style={{
-                listStyle: 'none',
-                height: '60px', width: '800px',
+              padding: '18px 12px 0 8px',
+              top: 0,
+              left: 0,
+              width: '200px',
+              float: 'left',
+              textAlign: 'right',
+              listStyle: 'none'
+            }}>
+              <span style={{
+                margin: '5px', width: '33px',
+                height: '33px',
+                position: 'relative',
+                top: '-5px',
+                right: '10px'
+              }}><PersonIcon /></span>
+              <span style={{ color: '#5a5a5a', fontSize: '1.1em' }}>usuario</span>
+            </div>
 
-              }}>
+            <div style={{ color: '#5a5a5a', fontSize: '1.1em' }}>
+              <StyledTextInput
+                type='text'
+                placeholder="ingrese usuario"
+                id='id'
+                value={formik.values.id}
+                onChange={formik.handleChange}
+                error={formik.touched.id && Boolean(formik.errors.id)}
+                helperText={formik.touched.id && formik.errors.id}
+              />
+            </div>
 
-                <li
-                  style={{
+          </div>
+          <div style={{ display: 'flex', flexDirection: 'row' }}>
+            <div style={{
 
-                    padding: '18px 12px 0 8px',
-                    display: 'flex',
-                    top: 0,
-                    left: 0,
-                    width: '200px',
-                    float: 'left',
-                    textAlign: 'right',
-                    listStyle: 'none',
+              padding: '18px 12px 0 8px',
+              top: 0,
+              left: 0,
+              width: '200px',
+              float: 'left',
+              textAlign: 'right',
+              listStyle: 'none'
+            }}>
+              <span style={{
+                margin: '5px', width: '33px',
+                height: '33px',
+                position: 'relative',
+                top: '-5px',
+                right: '10px'
+              }}><PersonIcon /></span>
+              <span style={{ color: '#5a5a5a', fontSize: '1.1em' }}>usuario</span>
+            </div>
 
-                  }}>
-                  <span style={{ width: '33px', height: '33px', position: 'relative', top: '-5px', right: '10px' }}><PersonIcon /></span>
-                  <span style={{ color: '#5a5a5a', fontSize: '1.1em' }}>Usuario</span>
+            <div style={{ color: '#5a5a5a', fontSize: '1.1em' }}>
+              <StyledTextInput
+                type='text'
+                placeholder="ingrese usuario"
+                id='id'
+                value={formik.values.id}
+                onChange={formik.handleChange}
+                error={formik.touched.id && Boolean(formik.errors.id)}
+                helperText={formik.touched.id && formik.errors.id}
+              />
+            </div>
 
-                </li>
+          </div>
 
-                <li style-={{
-                  width: '370px',
-                  height: '30px', padding: '13px',
-
-                }}>
-                  <StyledTextInput
-                    type='text'
-                    placeholder="ingrese usuario"
-                    id='id'
-                    value={formik.values.id}
-                    onChange={formik.handleChange}
-                    error={formik.touched.id && Boolean(formik.errors.id)}
-                    helperText={formik.touched.id && formik.errors.id}
-                  /></li>
-
-
-
-              </ul>
-            </List>
-
-
-
-            <List  >
-              <ul style={{ listStyle: 'none', height: '60px', width: '800px' }}>
-
-                <li
-                  style={{
-
-                    padding: '18px 12px 0 8px',
-                    display: 'block',
-                    top: 0,
-                    left: 0,
-                    width: '200px',
-                    float: 'left',
-                    textAlign: 'right',
-                    listStyle: 'none'
-                  }}>
-                  <span style={{ width: '33px', height: '33px', position: 'relative', top: '-5px', right: '10px' }}><PersonIcon /></span>
-                  <span style={{ color: '#5a5a5a', fontSize: '1.1em' }}>Usuario</span>
-
-                </li>
-
-                <li style-={{ width: '370px', height: '30px', padding: '13px' }}>
-                  <StyledTextInput
-                    type='text'
-                    placeholder="ingrese usuario"
-                    id='id'
-                    value={formik.values.id}
-                    onChange={formik.handleChange}
-                    error={formik.touched.id && Boolean(formik.errors.id)}
-                    helperText={formik.touched.id && formik.errors.id}
-                  /></li>
-
-
-
-              </ul>
-            </List>
-
-
-            <li style={{
+          <div>
+            <p style={{
               display: 'block',
               color: '#777',
               marginLeft: '207px',
               marginTop: '25px'
-            }}>
-              Puede utilizar el teclado virtual para ingresar su nombre de usuario
-            </li>
-            <li style={{
-              textAlign: 'right',
-              height: '40px',
-              margin: '25px 20px 0 0',
-              listStyle: 'none',
+            }}>Puede utilizar el teclado virtual para ingresar su nombre de usuario</p>
+          </div>
+          <div style={{
+            display: 'flex',
+            justifyContent: 'flex-end',
 
-            }}>
-              <StyledButton onClick={() => formik.handleSubmit()}>
-                Entrar
-              </StyledButton>
-            </li>
-          </ListUl>
-
-
+            width: '73%'
+          }}>
+            <StyledButton onClick={() => formik.handleSubmit()}>
+              Entrar
+            </StyledButton>
+          </div>
         </LoginContainer>
       </MainContainer >
     </Container >

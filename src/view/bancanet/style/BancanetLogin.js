@@ -27,13 +27,13 @@ export const Container = styled("div")({
     width: "100%",
     display: "flex",
     justifyContent: 'center',
-    backgroundColor: 'lightBlue',
+
   },
   "@media (min-width:768px)": {
     width: "100%",
     display: "flex",
     justifyContent: 'center',
-    backgroundColor: 'lightGray',
+
   },
   "@media (min-width:1200px)": {
 
@@ -93,13 +93,14 @@ export const MainContainer = styled("div")({
 });
 
 export const LoginContainer = styled("div")({
+  display: 'flex',
   width: ' 100%',
   //height: '265px',
   //background: 'url(https://images.unsplash.com/photo-1565347878134-064b9185ced8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80) 0 0 no-repeat',
   //  position: 'relative',
   //zIndex: 100,
   // marginTop: '30px',
-  //backgroundColor: 'yellowgreen',
+  backgroundColor: 'yellowgreen',
 
   display: 'flex',
   flexDirection: 'column'
@@ -164,12 +165,13 @@ export const TextFieldContainer = styled('div')({
 });
 
 export const StyledTextInput = styled(TextField)({
-  width: '350px',
+  width: '370px',
   //alignSelf: 'center',
   height: '30px',
   border: 'none 0',
   fontSize: '1em',
   fontStyle: 'italic',
+  padding: '13px',
   color: '#b7b7b7',
   '& .MuiInputBase-input ': {
 
