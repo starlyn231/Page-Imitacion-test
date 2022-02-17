@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { DrawerList, TitleList, DrawerListItemContainer, ListText, MenuButton, StyledDrawer } from './style/Drawer';
+import { DrawerList, TitleList, DrawerListItemContainer, ListText, MenuButton, StyledDrawer, IconClose, ContainerIcon } from './style/Drawer';
 import MenuIcon from "@mui/icons-material/Menu";
 import { Button } from '@mui/material';
 
@@ -26,52 +26,53 @@ export const Drawer = () => {
       onClose={() => setDrawerState(!drawerState)}
     > <DrawerList>
         <div> <TitleList>Menu</TitleList>  </div>
-
-
+        <ContainerIcon><IconClose onClick={() => setDrawerState(!drawerState)} /></ContainerIcon>
         <DrawerListItemContainer>
-          <ListText>Nuestra Historia</ListText>
+          <ListText>Sobre nosotros</ListText>
         </DrawerListItemContainer>
 
         <DrawerListItemContainer>
-          <ListText>Nuestra gente</ListText>
+          <ListText>Sala de prensa</ListText>
         </DrawerListItemContainer>
         <DrawerListItemContainer>
-          <ListText>Nuestra filosofia</ListText>
-        </DrawerListItemContainer>
-
-        <DrawerListItemContainer>
-          <ListText>Memorias</ListText>
+          <ListText>Para ti</ListText>
         </DrawerListItemContainer>
 
         <DrawerListItemContainer>
-          <ListText>Informe anual Gobierno Corporativo</ListText>
+          <ListText>Para Mi Negocio</ListText>
         </DrawerListItemContainer>
 
         <DrawerListItemContainer>
-          <ListText>Informe Anual Gestión Integral De Riesgos</ListText>
+          <ListText>Para tu empresa</ListText>
         </DrawerListItemContainer>
 
         <DrawerListItemContainer>
-          <ListText>Nuestra Historia</ListText>
+          <ListText>Banca Seguros</ListText>
         </DrawerListItemContainer>
 
         <DrawerListItemContainer>
-          <ListText>Nuestra Historia</ListText>
+          <ListText>Tarifarios y tasas</ListText>
         </DrawerListItemContainer>
 
         <DrawerListItemContainer>
-          <ListText>Nuestra Historia</ListText>
+          <ListText>Proteción al usuario</ListText>
         </DrawerListItemContainer>
 
         <DrawerListItemContainer>
-          <ListText>Nuestra Historia</ListText>
+          <ListText>Informacion</ListText>
         </DrawerListItemContainer>
 
         <DrawerListItemContainer>
-          <ListText>Nuestra Historia</ListText>
+          <ListText>Noticias</ListText>
+        </DrawerListItemContainer>
+
+        <DrawerListItemContainer>
+          <ListText>Canales de contacto</ListText>
         </DrawerListItemContainer>
       </DrawerList>
     </StyledDrawer>
+
+
 
   </div>;
 };

@@ -1,0 +1,248 @@
+{
+  "req":
+  {
+      "service_id": 14,
+      "doc_identification": "00199999999",
+      "name_service": "Uso de Salones Protocolares",
+      "process_flow": null,
+      "form_version": "118",
+      "payment_amount": 0,
+      "payment_status": "1",
+      "payment_method": "2",
+      "total": 0,
+      "variations":
+      [
+          16
+      ],
+      "cant": 1,
+      "idAutorizacionPortal": ""
+  },
+  "form":
+  {
+      "citizen_record_id": "00199999999",
+      "expertform_id": 2245,
+      "data":
+      [
+          {
+              "key": "texto5100",
+              "value": "01",
+              "type": "select-one",
+              "labelValue": "LAS AMERICAS (SDQ)",
+              "label": "Aeropuerto:",
+              "customLabel":
+              {
+                  "key": "texto5101",
+                  "value": "LAS AMERICAS (SDQ)"
+              }
+          },
+          {
+              "key": "texto5050",
+              "value": "S01",
+              "type": "select-one",
+              "labelValue": "Personal",
+              "label": "Tipo de Solicitud:",
+              "customLabel":
+              {
+                  "key": "texto5049",
+                  "value": "Personal"
+              }
+          },
+          {
+              "key": "texto5058",
+              "value": "02",
+              "type": "select-one",
+              "labelValue": "Salida - 02",
+              "label": "Tipo de Servicio:",
+              "customLabel":
+              {
+                  "key": "texto5031",
+                  "value": "Salida - 02"
+              }
+          },
+          {
+              "key": "radiobutt02",
+              "value": "0",
+              "type": "radio",
+              "labelValue": "Cédula",
+              "label": "Tipo de Documento"
+          },
+          {
+              "key": "texto5032",
+              "value": "40225994520",
+              "type": "text",
+              "labelValue": null,
+              "label": "No. de Identidad:"
+          },
+          {
+              "key": "texto5030",
+              "value": "20",
+              "type": "number",
+              "labelValue": null,
+              "label": "Nombres"
+          },
+          {
+              "key": "texto5034",
+              "value": "40",
+              "type": "number",
+              "labelValue": null,
+              "label": "1er Apellido"
+          },
+          {
+              "key": "texto5035",
+              "value": "100",
+              "type": "number",
+              "labelValue": null,
+              "label": "2do Apellido"
+          },
+          {
+              "key": "texto5094",
+              "value": "Test",
+              "type": "text",
+              "labelValue": null,
+              "label": "Nacionalidad"
+          },
+          {
+              "key": "texto5086",
+              "value": "M",
+              "type": "select-one",
+              "labelValue": "Masculino",
+              "label": "Sexo",
+              "customLabel":
+              {
+                  "key": "texto5095",
+                  "value": "Masculino"
+              }
+          },
+          {
+              "key": "texto5037",
+              "value": "(809) 632-5147",
+              "type": "text",
+              "labelValue": null,
+              "label": "Teléfono"
+          },
+          {
+              "key": "texto5029",
+              "value": "C058",
+              "type": "select-one",
+              "labelValue": "Ex-directores del Departamento Aeroportuario",
+              "label": "Cargo :",
+              "customLabel":
+              {
+                  "key": "texto25505",
+                  "value": "Ex-directores del Departamento Aeroportuario"
+              }
+          },
+          {
+              "key": "texto5057",
+              "value": "18",
+              "type": "select-one",
+              "labelValue": "Conani",
+              "label": "Nombre de la Institucion",
+              "customLabel":
+              {
+                  "key": "texto5056",
+                  "value": "Conani"
+              }
+          },
+          {
+              "key": "texto25506",
+              "value": "test@test.com",
+              "type": "email",
+              "labelValue": null,
+              "label": "Correo electrónico Laboral de Asistente:"
+          },
+          {
+              "key": "texto5078",
+              "value": "(809) 874-5211",
+              "type": "tel",
+              "labelValue": null,
+              "label": "Teléfono Oficina"
+          },
+          {
+              "key": "texto5013",
+              "value": "1256",
+              "type": "number",
+              "labelValue": null,
+              "label": "Ext. Oficina"
+          },
+          {
+              "key": "fecha01",
+              "value": "2021-12-07",
+              "type": "text",
+              "labelValue": "Fecha  *",
+              "label": "Fecha "
+          },
+          {
+              "key": "texto5059",
+              "value": "L08",
+              "type": "select-one",
+              "labelValue": "LASER AIRLINES",
+              "label": "Linea Aérea Salida",
+              "customLabel":
+              {
+                  "key": "texto5004",
+                  "value": "LASER AIRLINES"
+              }
+          },
+          {
+              "key": "texto5072",
+              "value": "L0801",
+              "type": "select-one",
+              "labelValue": "2967",
+              "label": "No. de Vuelo",
+              "customLabel":
+              {
+                  "key": "texto5060",
+                  "value": "2967"
+              }
+          },
+          {
+              "key": "hora1",
+              "value": "19:25",
+              "type": "time",
+              "labelValue": "Hora Programada: *",
+              "label": "Hora Programada:"
+          },
+          {
+              "key": "texto5016",
+              "value": "Test",
+              "type": "text",
+              "labelValue": null,
+              "label": "Destino:"
+          },
+          {
+              "key": "texto5020",
+              "value": "Test",
+              "type": "text",
+              "labelValue": null,
+              "label": "Persona que despide:"
+          }
+      ],
+      "grid":
+      {}
+  },
+  "documents":
+  [],
+  "userInfo":
+  {
+      "a2idciudadano": "00199999999",
+      "logico01": true,
+      "a3nombres": "Juan",
+      "a4apellido1": "De Los",
+      "a5apellido2": "Palotes",
+      "a7fecharegistro": "2021-12-06",
+      "a8horaregistro": "16:21",
+      "b3direccion": "C Calle",
+      "b4estadocivil": "Soltero(a)",
+      "b5fechanac": "1995-03-07",
+      "b6lugarnac": "SANTO DOMINGO, R.D.",
+      "b8paisdir": "República Dominicana",
+      "b9provincia": "Santo Domingo",
+      "c1sectordir": "La Lotería",
+      "c2sexo": "MASCULINO",
+      "c4municipio": "Santo Domingo Norte",
+      "c7telefono": "8095552222",
+      "c6celular": "8099999999",
+      "c5correo": "juan.palotes@test.com"
+  }
+}

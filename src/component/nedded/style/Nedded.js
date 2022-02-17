@@ -25,10 +25,10 @@ export const Container = styled('div')({
 
 export const Title = styled('h2')({
 
-  fontWeight: 500,
+  //fontWeight: 500,
   marginTop: '40px!important',
   textAlign: 'center',
-  color: '#0e3252!important',
+  color: '#0e3252',
   fontSize: '2rem',
   //lineHeigh: 1.3,
   letterSpacing: '2px',
@@ -64,7 +64,8 @@ export const LinkItem = styled('a')({
   // border: '2px solid #707070',
   borderRadius: '2px !important',
   padding: '2px 10px',
-  color: '#707070',
+  //  color: '#707070',
+  color: COLORS.secondary,
   textDecoration: 'none',
   cursor: 'pointer',
   fontFamily: 'Montserrat,sans-serif!important',

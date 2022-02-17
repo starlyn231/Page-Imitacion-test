@@ -15,7 +15,7 @@ export const Header = () => {
   const navigate = useNavigate();
   const matchesWidth = useMediaQuery("(min-width:768px)");
   const onRoute = () => {
-    navigate("/posts", {
+    navigate("/bancanet", {
       replace: true
     })
   }

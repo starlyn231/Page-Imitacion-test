@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { Header } from '../../component/header/Header';
 import { Container, CardsContainer, Item, ContainerSegmento, CardSegmento, ContentCard, BtncardHome, BtnContacto, TitleContact, ContainerIcons } from './style/Home';
 import { CarouselBootstrap } from './carrousel/CarouselBootstrap'
@@ -17,27 +17,43 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import Box from '@mui/material/Box';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import YouTubeIcon from '@mui/icons-material/YouTube';
+import { TouchDragSlider } from './touch-drag-slider/TouchDragSlider';
+import SwiperCarousel from './swiperSlider/SwiperCarousel';
 //import { experimentalStyled as styled } from '@mui/material/styles';
 export const Home = () => {
 
   return <Container>
 
+    <Header />
+    {/* <CarouselBootstrap />   <TouchDragSlider />*/}
 
     <CarouselBootstrap />
+
     <CardsContainer>
-      <CardCategory backgroundColor='blue' title="Para ti"
-        infoButton="VER MÁS"
-      />
-      <CardCategory backgroundColor='blueDark' title="Para 'Mi Negocio' "
-        infoButton="VER MÁS"
-      />
 
-      <CardCategory backgroundColor='gray' title="Para tu empresa"
-        infoButton="VER MÁS"
-      />
 
+
+      <Grid item xs={12} sm={12} md={3}>
+        <CardCategory backgroundColor='blue' title="Para ti"
+          infoButton="VER MÁS"
+        />
+      </Grid>
+      <Grid item xs={12} sm={12} md={3}>
+        <CardCategory backgroundColor='blueDark' title="Para 'Mi Negocio' "
+          infoButton="VER MÁS"
+        /></Grid>
+
+      <Grid item xs={12} sm={12} md={3}>
+        <CardCategory backgroundColor='gray' title="Para tu empresa"
+          infoButton="VER MÁS"
+        />
+
+      </Grid>
 
     </CardsContainer>
+
+
+
 
     {/* <Posts /> */}
     <Nedded />
@@ -105,7 +121,7 @@ export const Home = () => {
               <YouTubeIcon fontSize="large" />
 
             </ContainerIcons>
-            <small className="bsc-white uk-display-block uk-margin-left ">© 2022. Banco Santa Cruz RD. Todos los Derechos Reservados. </small>
+            <small className="bsc-white uk-display-block uk-margin-left uk-text-center">© 2022. Banco Santa Cruz RD. Todos los Derechos Reservados. </small>
           </Item>
         </Grid>
 
@@ -115,5 +131,5 @@ export const Home = () => {
     </Box>
 
 
-  </Container>;
+  </Container >;
 };

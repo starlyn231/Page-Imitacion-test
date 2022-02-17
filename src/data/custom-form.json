@@ -1,0 +1,49 @@
+[
+{
+  "type":"input", 
+  "name": " Primer Nombre",
+  "placeholder": "starlyn",
+  "label" :"first Name",
+  "value": "",
+  "validations":[{"type":"required"},
+    {
+      "type":"minLength",
+    "value":5    }
+  ]
+
+},
+
+{
+  "type":"input", 
+  "name": " Apellido",
+  "placeholder": "Marino",
+  "label" :"Last Name",
+  "value": "",
+  "validations":[{"type":"required"}
+
+  ]
+
+},
+
+{
+  "type":"email", 
+  "name": " email",
+  "placeholder": "Inserte su Email",
+  "label" :"Correo Electronico",
+  "value": "",
+  "validations":[{"type":"required"}]
+
+},
+
+{
+  "type":"select", 
+  "name": "favoriteGame",
+  "label" :"Favorite Game",
+  "value": "",
+  "validations":[{"type":"required"}],
+
+  "options":[ {"id":1, "label":"super smash"}, 
+    {"id":2,"label":"Fortine"},{"id":3, "label": "resident Evil"}]
+}
+
+]

@@ -94,23 +94,24 @@ export const HomeTitle = styled("h1")({
 export const CardsContainer = styled("div")({
   display: "flex",
   flexDirection: "row",
-  position: 'relative',
   justifyContent: 'center',
-  flexDirection: 'row',
+
+
   width: '100%',
   marginTop: '10px',
-  marginBottom: '14px'
-  /*
-    "@media (min-width:320px)": {
-      flexDirection: "column",
-      
-    },
-    "@media (min-width:768px)": {
-      flexDirection: "column",
-    },
-    "@media (min-width:1200px)": {
-      flexDirection: "row",
-    },*/
+  marginBottom: '14px',
+
+
+  "@media (min-width:320px)": {
+    flexDirection: "column",
+
+  },
+  "@media (min-width:768px)": {
+    flexDirection: 'row',
+  },
+  "@media (min-width:1200px)": {
+    flexDirection: 'row',
+  },
 });
 
 

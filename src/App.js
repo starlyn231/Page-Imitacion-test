@@ -7,6 +7,8 @@ import { ReactQueryDevtools } from 'react-query/devtools'
 import { BrowserRouter } from 'react-router-dom';
 import { Router } from './router/Router'
 import { Header } from './component/header/Header';
+
+
 const queryClient = new QueryClient();
 function App() {
   return (
@@ -14,7 +16,7 @@ function App() {
 
 
       <BrowserRouter>
-        <Header />
+
         <Router />
 
       </BrowserRouter>
