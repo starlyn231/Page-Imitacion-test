@@ -22,13 +22,22 @@ export const Container = styled("div")(props => ({
 
 export const DrawerList = styled(List)({
 
-  width: "400px",
+
   //alignSelf: "end",
   position: 'relative',
   overflowY: 'auto',
   display: 'block',
 
 
+  "@media (min-width:320px)": {
+    width: "100vw",
+  },
+  "@media (min-width:768px)": {
+    width: "100vw",
+  },
+  "@media (min-width:1200px)": {
+    width: "400px",
+  }
 });
 
 export const StyledDrawer = styled(Drawer)(props => ({
@@ -38,6 +47,16 @@ export const StyledDrawer = styled(Drawer)(props => ({
   }*/
 
   overflow: "scroll",
+
+  "@media (min-width:320px)": {
+    width: "100%",
+  },
+  "@media (min-width:768px)": {
+    width: "100%",
+  },
+  "@media (min-width:1200px)": {
+
+  }
 
 }));
 
@@ -120,4 +139,26 @@ export const IconClose = styled(CloseIcon)({
   stroke: 'rgb(9, 97, 173)',
   strokeWidth: 3.2,
   cursor: 'pointer',
+})
+
+
+export const Bancanet = styled('a')({
+  fontSize: "1rem",
+  fontFamily: 'Montserrat,sans-serif',
+  color: '#00a44f',
+  backgroundColor: '#f4f8fb',
+  //fontStyle: 'italic',
+  fontWeight: 800,
+  borderRadius: ' 20px 0 0 20px',
+  //lineHeight: 3.1,
+  //marginRight: '7px',
+  padding: ' 10px 15px',
+  cursor: 'pointer',
+  '&:hover': {
+    cursor: 'pointer',
+    backgroundColor: 'rgba(0, 127, 255, 0.12)',
+    color: COLORS.secondary
+  }
+
+  //color: props.layout === 'public' ? COLORS.white : COLORS.black,
 })

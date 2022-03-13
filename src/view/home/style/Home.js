@@ -116,6 +116,7 @@ export const CardsContainer = styled("div")({
 
 
 export const ContainerSegmento = styled('div')({
+
   display: "flex",
   flexDirection: "row",
   //position: 'relative',
@@ -131,6 +132,7 @@ export const ContainerSegmento = styled('div')({
 })
 
 export const CardSegmento = styled(Card)({
+
   margin: '8px',
   width: '350px',
   boxSizing: 'border-box',
@@ -166,39 +168,7 @@ export const BtncardHome = styled(Button)({
 })
 
 
-export const BtnContacto = styled(Button)({
-  display: 'flex',
 
-  backgroundColor: 'transparent',
-  fontSize: '12px',
-  fontWeight: 'bold',
-  cursor: 'pointer',
-  padding: '15px',
-  color: "#333",
-  border: '1px solid  #0961ad!important;',
-  textDecoration: 'uppercase',
-  fontFamily: 'Montserrat,sans-serif!important',
-  lineHeight: 1.5,
-  minWidth: '205px',
-  marginBottom: 0,
-  fontWeight: 400,
-  alignItems: 'center',
-  borderRadius: '5px',
-  marginLeft: '15px'
-
-})
-
-
-export const TitleContact = styled('h3')({
-  letterSpacing: '2px',
-  fontWeight: '500!important',
-  fontSize: '1.26rem',
-  lineHeight: '1.4',
-  margin: '0  0 20px 5px',
-  fontFamily: 'Montserrat,sans-serif!important',
-  color: '#333',
-  textTransform: 'uppercase'
-})
 
 export const Item = styled(Paper)({
   //...theme.typography.body2,

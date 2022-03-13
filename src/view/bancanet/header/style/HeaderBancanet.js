@@ -1,6 +1,6 @@
 import { styled } from "@mui/system";
 
-import { Button } from "@mui/material";
+import { Button, TextField } from "@mui/material";
 import COLORS from "../../../../theme/Colors";
 
 
@@ -104,3 +104,53 @@ export const MenuDivider = styled("div")({
 
 });
 
+export const TextInput = styled('input')({
+  //backgroundColor: 'transparent!important',
+  //border: ' 0 none!important',
+  color: '#8686a5',
+  fontSize: '1.1em',
+  padding: '0 5px 0 5px',
+  width: '245px',
+  margin: '6px 0 6px 0',
+  height: '22px'
+
+
+});
+
+export const UlContainer = styled('ul')({
+  width: '600px', margin: '0', paddin: '0', display: 'flex'
+})
+
+export const TableContainer = styled('table')({
+  margin: '15px auto 20px auto', borderCollapse: 'collapse',
+  borderSpacing: '0',
+  display: 'flex',
+  flexDirection: 'column',
+  boxSizing: 'border-box',
+  borderColor: 'grey',
+  textIndent: 'initial', listStyle: 'none',
+
+
+})
+
+export const TextTextarea = styled('textarea')({
+  // backgroundColor: 'transparent!important',
+  //border: ' 0 none!important',
+  color: '#8686a5',
+  fontSize: '1.1em',
+  padding: '0 5px 0 5px',
+  width: '245px',
+  margin: '6px 0 6px 0',
+})
+
+/*export const TextInput = styled(TextField)({
+ 
+})*/
+
+export const ButtonDialog = styled(Button)({
+  textDecoration: 'none',
+  border: ' 1px outset ',
+  cursor: 'pointer'
+
+
+})

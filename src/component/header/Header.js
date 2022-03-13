@@ -20,6 +20,8 @@ export const Header = () => {
     })
   }
 
+
+
   return <Container>
     <LineContainer>
 
@@ -39,7 +41,7 @@ export const Header = () => {
 
 
           <MenuDivider />
-          <Location />
+          <Location></Location>
 
           <Search />
           <Drawer />

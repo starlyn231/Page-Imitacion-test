@@ -1,4 +1,4 @@
-import { styled } from "@mui/system";
+import { fontSize, fontWeight, styled } from "@mui/system";
 
 import { Button, TextField } from "@mui/material";
 import COLORS from "../../../theme/Colors";
@@ -7,60 +7,62 @@ import COLORS from "../../../theme/Colors";
 
 
 export const Container = styled("div")({
-  display: "flex",
-  justifyContent: 'center',
-  flexDirection: 'column',
+
+  margin: 0,
+  width: '100%',
+
+
+  display: 'grid',
+  gridTemplateColumns: 'repeat(6, 1fr)',
+  gridTemplateRows: 'repeat(6), 1fr)',
+  //display: "flex",
+  // justifyContent: 'center',
+  //flexDirection: 'column',
   // zIndex: 1000,
   // flexDirection: "row",
   // backgroundColor: COLORS.secondary,
   //justifyContent: "space-around",
   // alignItems: "center",
   //minHeight: "100px",
-  width: "100%",
-
-  //padding: '5px',
-  //fontWeight: 'normal',
-  //fontFamily: 'calibriLight'
-  margin: '0 auto 0 auto',
 
   "@media (min-width:320px)": {
-    width: "100%",
-    display: "flex",
-    justifyContent: 'center',
 
   },
   "@media (min-width:768px)": {
-    width: "100%",
-    display: "flex",
-    justifyContent: 'center',
 
   },
   "@media (min-width:1200px)": {
 
-    width: "100%",
-    display: "flex",
-    justifyContent: 'center',
 
   },
 
+});
+
+export const ContainerHeader = styled("div")({
+
+  gridColumn: 'span 6',
+  gridRow: 'span 1'
 
 });
+
 
 export const TopContainer = styled("div")({
 
   // zIndex: 1000,
   // flexDirection: "row",
-  // backgroundColor: COLORS.secondary,
+  backgroundColor: 'rgba(0, 0, 0, 0)',
+
   //justifyContent: "space-around",
   // alignItems: "center",
   //minHeight: "100px",
-  width: "100%",
+  width: "980px",
   height: '44px',
   //padding: '5px',
-  //fontWeight: 'normal',
+  fontWeight: '400',
+  color: ' rgb(0, 0, 0)',
   //fontFamily: 'calibriLight'
   margin: '0 auto 0 auto',
-  //backgroundColor: 'yellow',
+
   "@media (min-width:320px)": {
     // display: "flex",
   },
@@ -77,39 +79,56 @@ export const TopContainer = styled("div")({
 
 
 export const MainContainer = styled("div")({
-  //  display: "block",
-  //position: 'relative',
-  display: 'flex',
-  flexDirection: 'column',
+  gridColumn: '2/6',
+  gridRow: 'span 1',
   zIndex: 0,
-  width: "100%",
-
+  // display: 'flex',
+  //flexDirection: 'row',
+  zIndex: 0,
+  width: "990px",
+  backgroundColor: 'rgba(0, 0, 0, 0)',
   paddingTop: '10px',
   //fontWeight: 'normal',
   //fontFamily: 'calibriLight'
-  margin: '0 auto 0 auto',
+  margin: '0 5px 0 12px',
 
 
 });
 
 export const LoginContainer = styled("div")({
-  display: 'flex',
+  backgroundColor: 'rgba(0, 0, 0, 0)',
+  margin: '0 5px 0 12px',
+  zIndex: 805,
   width: ' 100%',
-  //height: '265px',
-  //background: 'url(https://images.unsplash.com/photo-1565347878134-064b9185ced8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80) 0 0 no-repeat',
-  //  position: 'relative',
   //zIndex: 100,
-  // marginTop: '30px',
-  backgroundColor: 'yellowgreen',
-
   display: 'flex',
-  flexDirection: 'column'
+  flexDirection: 'column',
+  backgroundOrigin: 'padding-box',
+
+});
+
+
+export const AsideRight = styled("div")({
+
+  gridColumn: 'span 1',
 
 
 });
+
+export const ContainerLeft = styled('div')({
+  //zIndex: 5,
+  display: 'flex',
+
+  width: "980px",
+
+  background: 'linear-gradient(#ffffff, #dfe4ea)',
+  boxShadow: 'inset 0 0 10px #444444',
+
+  border: '2px solid green'
+})
 export const ListUl = styled('ul')({
   position: 'relative',
-  zIndex: 101,
+  // zIndex: 101,
   width: '100%',
   margin: ' 0 auto 0 auto',
   top: '40px',
@@ -136,16 +155,15 @@ export const TitleWelcome = styled('h3')({
 
 export const Date = styled('span')({
   textShadow: ' 0 1px 1px #fff',
-  fontSize: '.8em',
+  fontSize: '1.3em',
   color: '#838181',
   float: 'right',
   padding: '23px 20px 5px 40px',
   fontFamily: 'CalibriRegular',
   fontWeight: 'normal',
   '@media (min-width:320px)': {
-    display: 'flex',
-    position: 'absolute',
-    right: '100%'
+
+
 
   },
   '@media (min-width:768px)': {
@@ -169,10 +187,12 @@ export const StyledTextInput = styled(TextField)({
   //alignSelf: 'center',
   height: '30px',
   border: 'none 0',
-  fontSize: '1em',
+
   fontStyle: 'italic',
   padding: '13px',
   color: '#b7b7b7',
+  marginBottom: '25px',
+  padding: '20px',
   '& .MuiInputBase-input ': {
 
   },
@@ -182,7 +202,7 @@ export const StyledTextInput = styled(TextField)({
     },
 
     '&:hover fieldset': {
-      borderColor: COLORS.secondary,
+      borderColor: 'green',
     },
     '&.Mui-focused fieldset': {
       borderColor: COLORS.secondary,
@@ -193,7 +213,7 @@ export const StyledTextInput = styled(TextField)({
 
 
 export const StyledButton = styled(Button)({
-
+  marginTop: '15px',
   border: 'none 0!important',
   color: '#fff',
   fontFamily: 'CalibriRegular',
@@ -201,7 +221,7 @@ export const StyledButton = styled(Button)({
   cursor: 'pointer',
   color: '#fff',
   textAlign: 'center',
-  backgroundColor: 'green',
+
   padding: '0 0 0 0',
   fontSize: '.85em',
   width: '158px',
@@ -232,4 +252,21 @@ export const BodyText = styled('p')({
   margin: '0'
 });
 
+export const LinkRegister = styled('a')({
+  fontFamily: 'CalibriLight',
+  fontSize: '16px',
+  textAlign: 'right',
+  color: 'rgb(16, 99, 176)',
+  fontWeight: '400', letterSpacing: '-0.16px',
+  marginLeft: '10px',
+  padding: '2px',
+  fontWeight: 600,
 
+  '&:hover,&:focus,&:active': {
+
+    textDecoration: 'underline',
+    fontSize: '18px',
+    cursor: 'pointer'
+  }
+
+})

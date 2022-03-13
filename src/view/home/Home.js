@@ -1,6 +1,9 @@
 
 import { Header } from '../../component/header/Header';
-import { Container, CardsContainer, Item, ContainerSegmento, CardSegmento, ContentCard, BtncardHome, BtnContacto, TitleContact, ContainerIcons } from './style/Home';
+import {
+  Container, CardsContainer, Item, ContainerSegmento, CardSegmento,
+  ContentCard, BtncardHome, BtnContacto, TitleContact, ContainerIcons
+} from './style/Home';
 import { CarouselBootstrap } from './carrousel/CarouselBootstrap'
 import { Posts } from '../../component/post/Posts';
 import { CardCategory } from './componets/CardCategory';
@@ -8,9 +11,7 @@ import { Nedded } from '../../component/nedded/Nedded';
 import CardMedia from '@mui/material/CardMedia';
 import { Button, Typography } from '@mui/material';
 import { SegmentoConten } from '../../component/nedded/CardContains'
-import MailOutlineIcon from '@mui/icons-material/MailOutline';
-import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
-import EditLocationIcon from '@mui/icons-material/EditLocation';
+
 import InstagramIcon from '@mui/icons-material/Instagram';
 import Grid from '@mui/material/Grid';
 import FacebookIcon from '@mui/icons-material/Facebook';
@@ -19,6 +20,9 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import { TouchDragSlider } from './touch-drag-slider/TouchDragSlider';
 import SwiperCarousel from './swiperSlider/SwiperCarousel';
+import { Footer } from './componets/Footer';
+import { Contactanos } from '../../component/Contact/Contactanos';
+import { PolicyComponent } from '../../component/PolicyComponent/PolicyComponent';
 //import { experimentalStyled as styled } from '@mui/material/styles';
 export const Home = () => {
 
@@ -95,40 +99,9 @@ export const Home = () => {
           </CardSegmento>
         ))}
     </ContainerSegmento>
-    <div>  <TitleContact >Contactanos</TitleContact>
-      <div style={{ display: 'flex', justifyContent: 'center', flexDirection: 'row' }}>
+    <Contactanos />
 
-
-        <BtnContacto><LocalPhoneIcon /> 809-726-1000</BtnContacto>
-
-        <BtnContacto><MailOutlineIcon /> community@bsc.com.do</BtnContacto>
-
-        <BtnContacto><EditLocationIcon /> Encuentranos </BtnContacto>
-
-
-
-      </div>
-    </div>
-
-    <Box sx={{ width: '100%' }}>
-      <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
-        <Grid item xs={12}>
-          <Item>
-            <ContainerIcons>
-              <FacebookIcon fontSize="large" />
-              <InstagramIcon fontSize="large" />
-              <TwitterIcon fontSize="large" />
-              <YouTubeIcon fontSize="large" />
-
-            </ContainerIcons>
-            <small className="bsc-white uk-display-block uk-margin-left uk-text-center">© 2022. Banco Santa Cruz RD. Todos los Derechos Reservados. </small>
-          </Item>
-        </Grid>
-
-
-
-      </Grid>
-    </Box>
+    <Footer />
 
 
   </Container >;
